@@ -1,0 +1,22 @@
+[project]
+name = "proyect-gan"
+version = "0.1.0"
+description = "Proyecto de generación de imágenes mediante GAN"
+readme = "README.md"
+authors = [
+    { name = "Willy-HC", email = "willton.higuera@usantoto.edu.co" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "numpy"
+]
+
+[project.scripts]
+proyect-gan = "proyect_gan.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
